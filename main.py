@@ -12,16 +12,14 @@ def run():
 
 
 def sum_n(n):
-  if n<=1:
-    return 1
+  if n<1:
+    return 0
   else:
     return n + sum_n(n-1)
 
 
 def print_n(s, n):
-  if n<=1:
-    print(s)
-  else:
+  if n>=1:
     print(s)
     print_n(s,n-1)
 
